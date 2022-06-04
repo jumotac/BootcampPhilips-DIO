@@ -1,0 +1,47 @@
+body {
+    background: #fafafa;
+}
+
+.dino {
+    width: 60px;
+    height: 60px;
+    background-image: url(/02-desafios/02-desafio-dino-game/img/dino.png);
+    background-repeat: no-repeat;
+    position: absolute; /*nao mudar a posição idependentemente dos elementos*/
+    bottom: 0; /*para posicionar o Dino na parte de baixo*/
+}
+
+.cactos {
+    width: 60px;
+    height: 60px;
+    background-image: url(/02-desafios/02-desafio-dino-game/img/cactus.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.game-over {
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+/*Animações com CSS*/
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    background-image: url(/02-desafios/02-desafio-dino-game/img/background.png);
+    position: absolute;
+    bottom: 0;
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
